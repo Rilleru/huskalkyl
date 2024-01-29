@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator app</title>
+</head>
+<body>
+    <h1>Husköps kalkylering</h1>
+    
+    <div class="calculator">
+        <input type="text" id="input1" placeholder="Hus pris">
+        <input type="text" id="input2" placeholder="Pantbrev">
+        <input type="text" id="input3" placeholder="Taxeringsvärde">
+        <input type="text" id="input4" placeholder="Ränta">
+        <input type="text" id="input5" placeholder="Kontantinsats">
+        <button onclick="calculate()">Beräkna</button>
+        <div class="result">
+            <label>Lånebelopp:</label>
+            <input type="text" id="result1" readonly>
+            <label>Pantbrevskostnad:</label>
+            <input type="text" id="result2" readonly>
+            <label>Lagfart:</label>
+            <input type="text" id="result3" readonly>
+            <label>Räntekostnad per mån:</label>
+            <input type="text" id="result4" readonly>
+            <label>Pant + Lagfart</label>
+            <input type="text" id="result5" readonly>
+        </div>
+        <button onclick="resetValues()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
